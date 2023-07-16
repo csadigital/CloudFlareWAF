@@ -1,21 +1,21 @@
-### ☁️ Cloudflare Firewall Rules To Prevent DDOS Attacks ☁️
+## ☁️ Firewall Kuralları ☁️
 
-Not recommend for sites with a large target range inside Asia
+| Kural Adı    | Dosya Adı                  | Eylem       | Amaç                                                     |
+| ------------ | -------------------------- | ----------- | -------------------------------------------------------- |
+| General      | rules.ssl                  | Manual ADD  | Performans, Kullanıcı Deneyimi, DDOS Koruması, Tarama    |
+|              |                            |             | Aracılarını Engelleme                                    |
+| Countries    | common-country.rules       | Block       | Sadece Tehlikeli Trafik Geçmeyen Ülkeleri İzin Ver       |
+| ASN Listesi  | bad-asn.rules              | Block       | En Bilinen Proxy Scraping Sitelerinin ASN Listesi        |
+| Threat Skoru | threatscore.rules          | Block       | Cloudflare Tarafından İşaretlenen Tehlikeli Tehditleri    |
+|              |                            |             | Engelle                                                  |
+| İstek Yöntemi | request-method.rules       | Block       | SADECE GET İsteklerine İzin Ver, POST ve HEAD İsteklerini |
+|              |                            |             | Engelle (İhtiyaç Durumunda)                               |
 
-## ☁️ Firewall Rules ☁️
+## ☁️ Temel Kullanım ☁️
 
-Rule Name | File Name | Action | What For
----- | ---- | ---- | ----
-General | [rules.ssl](./rules.ssl) | Manual ADD | Peformance, User Experience, DDOS Protection, Crawlers<br>
-Countries | [common-country.rules](./common-country.rules) | Block | Only Allow Country's Who Wont Pass Much Malicous Traffic.<br>
-ASN List | [bad-asn.rules](./bad-asn.rules) | Block | ASN List Of Most Known Proxyscraping Sites.<br>
-Threat Score | [threatscore.rules](./threatscore.rules) | Block | Block Bad Threats Flagged By Cloudflare<br>
-Request Method | [request-method.rules](./request-method.rules) | Block | Block POST & HEAD Request's Only Allow GET Request's Unless Needed.<br>
-
-## ☁️ How To Basic ☁️
 ![](https://media.discordapp.net/attachments/819747919581675530/829677841292460042/unknown.png) 
 ![](https://media.discordapp.net/attachments/819747919581675530/829678093706592276/unknown.png) 
 ![](https://media.discordapp.net/attachments/819747919581675530/829678478278000650/unknown.png) 
 ![](https://media.discordapp.net/attachments/819747919581675530/829678903131897906/unknown.png) 
 
-## ☁️ Dont Sell This Script ('
+## ☁️ csadigital.net ## ☁️
